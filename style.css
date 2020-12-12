@@ -2,8 +2,11 @@
 body {
   font-family: "Raleway", "Sans serif";
   margin: 0;
-  
 }
+a {
+    text-decoration: none;
+}
+
 
 .header {
     display: grid;
@@ -13,26 +16,29 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
 }
 .logo {
-    
     padding: 0 2rem;
-    height: 2.813rem;
+    height: 2.8rem;
 }
 .nav {
     display: flex;
     align-items: center;
-    
+    justify-content: flex-end;
 }
 .navLink {
     padding: 2rem;
     font-weight: 500;
+    color: black;
     text-align: center;
-    transition-duration: 0.1s;
     border-top: 3px transparent solid;
     border-bottom: 3px transparent solid;
 }
 .navLink:hover {
     color: #0065FC;
 }
+[data-active]{
+    color: #0065FC;
+}
+
 .signup {
     display: flex;
     align-items: center;
@@ -44,22 +50,33 @@ body {
 @media screen and (max-width: 600px) {
     .header {
         grid-template-columns: 1fr 1fr;
+
     }
     .logo {
         order: 0;
     }
     .signup {
         order: 1;
+        justify-content: flex-end;
     }
     .nav {
+        display:flex;
         order: 2;
+        justify-content: space-between;
+        width: 150%;
+        
     }
     .navLink {
         border-top: none;
         border-bottom: 3px solid #F2F2F2;
-        width: 50%;
+        width: 100%;
+        padding-top: 1rem;
     }
     .navLink:hover {
+        border-bottom-color: #0065FC;
+    }
+    [data-active]{
+        color: #0065FC;
         border-bottom-color: #0065FC;
     }
 }
