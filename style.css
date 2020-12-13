@@ -6,77 +6,105 @@ body {
 a {
     text-decoration: none;
 }
-
+main{
+    margin: 1rem;
+}
 
 .header {
     display: grid;
     align-items: center;
     max-width: 1440px;
     margin: auto;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
 }
 .logo {
-    padding: 0 2rem;
+    padding: 0 1rem;
     height: 2.8rem;
 }
 .nav {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-around;
 }
 .navLink {
-    padding: 2rem;
+    padding: 1rem;
     font-weight: 500;
     color: black;
     text-align: center;
     border-top: 3px transparent solid;
-    border-bottom: 3px transparent solid;
+    border-bottom: 3px #f2f2f2 solid;
+    width: 100%;
 }
 .navLink:hover {
     color: #0065FC;
+    border-bottom: 3px #0065FC solid;
 }
 [data-active]{
     color: #0065FC;
+    border-bottom: 3px #0065FC solid;
 }
-
 .signup {
     display: flex;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 1rem;
     color: #0065FC;
     font-weight: 600;
+    justify-content: flex-end;
 }
 
-@media screen and (max-width: 600px) {
-    .header {
-        grid-template-columns: 1fr 1fr;
+h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
 
-    }
-    .logo {
-        order: 0;
-    }
-    .signup {
-        order: 1;
-        justify-content: flex-end;
-    }
-    .nav {
-        display:flex;
-        order: 2;
-        justify-content: space-between;
-        width: 150%;
-        
-    }
-    .navLink {
-        border-top: none;
-        border-bottom: 3px solid #F2F2F2;
-        width: 100%;
-        padding-top: 1rem;
-    }
-    .navLink:hover {
-        border-bottom-color: #0065FC;
-    }
-    [data-active]{
-        color: #0065FC;
-        border-bottom-color: #0065FC;
-    }
+
+.searchInput{
+    display: flex;
+    border: 1px #f2f2f2 solid;
+    border-radius: 15px;
+}
+
+.searchInput input{
+    border:none;
+    text-align: left;
+    flex-basis: 90%;
+    padding-left:1rem;
+    font-weight: 700;
+}
+
+#placeholder::placeholder{
+    color: black;
+}
+
+.loca{
+    background-color: #f2f2f2;
+    padding: 1rem;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.loupe {
+    background-color: #0065fc;
+    color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    justify-content: flex-end;
+}
+.searchInput button{
+    border: 2px #0065fc solid;
+    padding: 0;
+    border-radius: 15px;
+    background-color: #0065fc;
+}
+
+#filtres{
+    font-weight: 700;
+}
+#filterList{
+    display: flex;
+}
+#filterList button{
+    border: 1px #f2f2f2 solid;
+    border-radius: 15px;
 }
