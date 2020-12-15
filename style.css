@@ -307,3 +307,22 @@ footer a{
     padding-top: 0.5rem;
     padding-bottom:0.5rem;
 }
+
+/******************** TABLETTE PORTRAIT ********************/
+@media screen and (min-width: 720px) {
+    body{
+        background-color: blue;
+    }
+}
+/******************** TABLETTE PAYSAGE ********************/
+@media screen and (min-width: 960px) {
+    body{
+        background-color: green;
+    }
+}
+/******************** DESKTOP ********************/
+@media screen and (min-width: 1140px) {
+    body{
+        background-color: black;
+    }
+}
