@@ -192,6 +192,7 @@ figure{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 50%;
 }
 .famousDescription{
     display:flex;
@@ -213,6 +214,7 @@ figcaption{
 .hebergementsPresentation .note{
     margin:0.8rem;
     
+
 }
 .note i{
     color: #0065fc;
@@ -367,12 +369,14 @@ footer a{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        
     }
     .hebergementsPresentation a{
         width: 30%;
     }
     .hebergementsPresentation article{
-        min-height: 15rem;      
+        min-height: 15rem; 
+        height: 15rem;     
     }
     .activitiesPresentation{
         display: flex;
@@ -385,11 +389,87 @@ footer a{
     .famousDescription{
        justify-content: space-between;
     }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
 }
 /******************** TABLETTE PAYSAGE ********************/
 @media screen and (min-width: 960px) {
-    body{
-        background-color: green;
+    .logo{
+        order:0;
+        position: absolute;
+        top: 0.4rem; 
+        left:0;
+    }
+    .signup{
+        order:2;
+        display: flex;
+        align-items: center;
+        padding: 2rem 1rem;
+        color: #0065FC;
+        font-weight: 600;
+        flex-basis:0 ;
+        justify-content: flex-end;
+        flex-grow:0;
+
+    }
+    .nav{
+        flex-basis: initial;
+        border-top:3px #0065FC solid;
+        order:1;
+    }
+    .navLink{
+        border:none;
+    }
+    .navLink:hover{
+        /*border-top:3px #0065FC solid;*/
+        border-bottom:none;
+    }
+    header{
+        justify-content: flex-end;
+    }
+    .filterList{
+        display:flex;
+        margin: 1rem;
+    }
+    #filtres{
+        margin-right:1.5rem;
+    }
+    main{
+        display:flex;
+        
+        flex-wrap: wrap;
+    }
+    .container{
+        order: 0;
+    }
+    #hebergements{
+        order:1;
+        width: 60%;
+        background-color:#f2f2f2;
+        margin-top:0;
+        margin-bottom:0;
+        border-radius:15px;
+        padding:1rem;
+    }
+
+    .famous{
+        order:2;
+        width: 30%;
+        border-radius:15px;
+    }
+    .famousPresentation{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .activities{
+        order:3;
+    }
+    .footer{
+        order:4;
     }
 }
 /******************** DESKTOP ********************/

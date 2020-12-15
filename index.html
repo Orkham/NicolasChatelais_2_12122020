@@ -35,6 +35,7 @@
             <a class="navLink" href="#activites">Activités</a>
 
         </nav>
+    
     </header>
         
         
@@ -55,12 +56,14 @@
                     <input type="text" id="placeholder" placeholder="Marseille,France">
                     <button type="submit"><i class="fas fa-search loupe"></i><span id="rechercher">Rechercher</span></button>
                 </div>
-                <p id="filtres">Filtres</p>
-                <div id="filterList">
-                    <button><i class="fas fa-money-bill-wave"></i>Economique</button>
-                    <button><i class="fas fa-child"></i>Familial</button>
-                    <button><i class="fas fa-heart"></i>Romantique</button>
-                    <button><i class="fas fa-dog"></i>Animaux autorisés</button>
+                <div class="filterList">
+                    <p id="filtres">Filtres</p>
+                    <div id="filterList">
+                        <button><i class="fas fa-money-bill-wave"></i>Economique</button>
+                        <button><i class="fas fa-child"></i>Familial</button>
+                        <button><i class="fas fa-heart"></i>Romantique</button>
+                        <button><i class="fas fa-dog"></i>Animaux autorisés</button>
+                    </div>
                 </div>
                 <div id="cityInfo">
                     <i class="fas fa-info"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
@@ -145,7 +148,6 @@
             <div class="hebergementsPresentation">
                 <a href="#">
                     <article>
-                        
                         <img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo d'une chambre de l'auberge de la Cannebière">
                         <div class="descriptionBox">
                             <div class="famousDescription">
@@ -165,11 +167,12 @@
 
                 <a href="#">
                     <article>
-                        
                         <img src="images\hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="photo d'une chambre de l'hôtel du port">
-                        <div class="famousDescription">
-                            <h4>Hôtel du port</h4>
-                            <p>Nuit à partir de 52€</p>
+                        <div class="descriptionBox">
+                            <div class="famousDescription">
+                                <h4>Hôtel du port</h4>
+                                <p>Nuit à partir de 52€</p>
+                            </div>
                             <div class="note">
                                 <i class="fas fa-star" data-i=true></i>
                                 <i class="fas fa-star" data-i=true></i>
@@ -177,7 +180,7 @@
                                 <i class="fas fa-star" data-i=true></i>
                                 <i class="fas fa-star" data-i=true></i>
                             </div>
-                        </div>
+                        </div>    
                     </article>
                 </a>
 
@@ -185,9 +188,11 @@
                     <article>
                         
                             <img src="images\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="photo d'une chambre de l'hôtel des mouettes">
+                            <div class="descriptionBox">
                             <div class="famousDescription">
                                 <h4>Hôtel Les mouettes</h4>
                                 <p>Nuit à partir de 76€</p>
+                            </div>
                                 <div class="note">
                                     <i class="fas fa-star" data-i=true></i>
                                     <i class="fas fa-star" data-i=true></i>
@@ -195,7 +200,7 @@
                                     <i class="fas fa-star" data-i=true></i>
                                     <i class="fas fa-star" data-i=false></i>
                                 </div>
-                            </div>
+                            </div>    
                     </article>
                 </a>
 
@@ -203,9 +208,11 @@
                     <article>
                         
                             <img src="images\hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="photo d'une chambre de l'hôtel de la mer">
+                            <div class="descriptionBox">
                             <div class="famousDescription">
                                 <h4>Hôtel de la mer</h4>
                                 <p>Nuit à partir de 46€</p>
+                            </div>
                                 <div class="note">
                                     <i class="fas fa-star" data-i=true></i>
                                     <i class="fas fa-star" data-i=true></i>
@@ -221,9 +228,11 @@
                     <article>
                         
                             <img src="images\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="photo d'une chambre de l'auberge le Panier">
+                            <div class="descriptionBox">
                             <div class="famousDescription">
                                 <h4>Auberge Le Panier</h4>
                                 <p>Nuit à partir de 23€</p>
+                            </div>
                                 <div class="note">
                                     <i class="fas fa-star" data-i=true></i>
                                     <i class="fas fa-star" data-i=true></i>
@@ -239,9 +248,11 @@
                     <article>
                         
                             <img src="images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="photo d'une chambre de l'hôtel chez Amina">
+                            <div class="descriptionBox">
                             <div class="famousDescription">
                                 <h4>Hôtel chez Amina</h4>
                                 <p>Nuit à partir de 96€</p>
+                            </div>
                                 <div class="note">
                                     <i class="fas fa-star" data-i=true></i>
                                     <i class="fas fa-star" data-i=true></i>
@@ -302,7 +313,7 @@
         </section>
 
 
-        <footer class="famous">
+        <footer class="famous footer">
 
             <div>
                 <h4>A propos</h4>
