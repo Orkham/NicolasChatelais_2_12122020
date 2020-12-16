@@ -424,14 +424,20 @@ footer a{
     }
     .nav{
         flex-basis: initial;
-        border-top:3px #0065FC solid;
+        /*border-top:3px #0065FC solid;*/
         order:1;
     }
+    [data-active]{
+        border-top:3px #0065FC solid;
+    }
     .navLink{
-        border:none;
+        border-bottom:none;
+        padding-top: 29px;
+        margin-top: -16px;
+        
     }
     .navLink:hover{
-        /*border-top:3px #0065FC solid;*/
+        border-top:3px #0065FC solid;
         border-bottom:none;
     }
     header{
@@ -446,7 +452,6 @@ footer a{
     }
     main{
         display:flex;
-        
         flex-wrap: wrap;
     }
     .container{
@@ -487,6 +492,7 @@ footer a{
         order:2;
         width: 30%;
         border-radius:15px;
+        margin:auto;
     }
     .famousPresentation{
         display:flex;
@@ -504,7 +510,7 @@ footer a{
         width:100%;
         display: flex;
         justify-content: flex-start;
-        flex-wrap: no-wrap;
+        flex-wrap: nowrap;
         flex-direction: row;
     }
     .footer div{
@@ -515,5 +521,28 @@ footer a{
 }
 /******************** DESKTOP ********************/
 @media screen and (min-width: 1140px) {
+    body{
+        background-color: white;
+    }
+    .activitiesPresentation a {
+        width: 25%;
+    }
+    .activities{
+        width:98%;
+    }
+    #firstImg, #forthImg{
+        height: 26rem;
+    }
+    #firstImg img, #forthImg img{
+        height: 18rem;
+    }
+    .activitiesPresentation{
+        max-height: 26rem;
+        flex-wrap: nowrap;
+    }
+    #secondImg, #thirdImg, #fifthImg, #sixthImg{
+        height: 12rem;
+        
+    }
     
 }
