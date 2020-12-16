@@ -515,7 +515,5 @@ footer a{
 }
 /******************** DESKTOP ********************/
 @media screen and (min-width: 1140px) {
-    body{
-        background-color: black;
-    }
+    
 }
