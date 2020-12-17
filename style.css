@@ -180,7 +180,7 @@ button:hover{
 }
 
 figure{
-    min-height: 6.5rem;
+    min-height: 8.5rem;
     display: flex;
     background-color: white;
     border-radius: 20px;
@@ -197,6 +197,7 @@ figure{
     flex-direction: column;
     justify-content: space-between;
     margin: 0.8rem;
+    font-size: large;
 }
 .famousDescription p{
     margin-top: 0.1rem;
@@ -205,6 +206,7 @@ figure{
 }
 figcaption{
     font-weight: 700;
+    font-size: large;
 }
 .euro{
     font-weight: 700;
@@ -217,7 +219,7 @@ figcaption{
 }
 .note i{
     color: #0065fc;
-    font-size: 9px;
+    font-size: 12px;
     margin: -1px;
 }
 i[data-i=true]{
@@ -235,8 +237,8 @@ i[data-i=false]{
 .imgRognee{
     position: relative;
     min-height: 100%;
-    width: 33%;
-    min-width: 33%;
+    
+    min-width: 40%;
     max-width: 33%;
     margin: 0.3rem;
 }
@@ -264,6 +266,8 @@ article img{
 
 article .famousDescription{
     margin-top:0;
+    margin-bottom:0;
+    font-size: large;
 }
 article .note{
     margin-bottom: 0.4rem;
@@ -364,7 +368,7 @@ footer a{
         justify-content:space-between;
     }
     .famousPresentation figure{
-        min-height: 10rem;        
+        min-height: 12rem;        
     }
     .famousPresentation a{
         width:100%;        
@@ -488,6 +492,7 @@ footer a{
     }
     .descriptionBox{
         background-color: white;
+        
     }
     .famous{
         order:2;
@@ -521,7 +526,7 @@ footer a{
     
 }
 /******************** DESKTOP ********************/
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1280px) {
     body{
         background-color: white;
     }
@@ -569,5 +574,7 @@ footer a{
     #sixthImg img{
         height:9.7rem;
     }
-    
+    .footer div{
+        margin-right:23%;
+    }
 }
