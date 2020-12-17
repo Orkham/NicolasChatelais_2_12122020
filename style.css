@@ -128,17 +128,15 @@ button:hover{
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     font-family: "Raleway", "Sans serif";
-    transition: border 2s, background-color 1s, font-size 2s, color 2s;
+    transition: background-color 1s,  color 1s;
 }
 #filterList button:hover{
-    border: 2px white solid;
     background-color: #0065fc;
-    font-size: 1rem;
     color:white;
 }
 #filterList i{
     color: #0065fc;
-    background-color: #f2f2f2;
+    background-color: #deebff;
     padding: 0.7rem;
     border-radius: 100%;
     border: 2px #f2f2f2 solid;
@@ -308,7 +306,9 @@ h4{
 footer{
     display: flex;
     flex-direction: column;
-    
+    background-color: #f2f2f2;
+    width: 100%;
+    margin-top: 2rem;
 }
 footer div{
     display: flex;
@@ -324,6 +324,7 @@ footer a{
     padding-top: 0.5rem;
     padding-bottom:0.5rem;
 }
+
 
 /******************** TABLETTE PORTRAIT ********************/
 @media screen and (min-width: 720px) {
@@ -524,6 +525,25 @@ footer a{
     body{
         background-color: white;
     }
+    .activitiesPresentation{
+        position: relative;
+    }
+    #thirdImg{
+        position:absolute;
+        top:55%;
+        left:25%
+    }
+    #secondImg img {
+        height: 10rem;
+    }
+    #fifthImg img{
+        height: 8rem;
+    }
+    #sixthImg{
+        position: absolute;
+        top: 47%;
+        left:75%;
+    }
     .activitiesPresentation a {
         width: 25%;
     }
@@ -534,15 +554,20 @@ footer a{
         height: 26rem;
     }
     #firstImg img, #forthImg img{
-        height: 18rem;
+        height: 22rem;
     }
     .activitiesPresentation{
-        max-height: 26rem;
+        max-height: 28rem;
         flex-wrap: nowrap;
     }
     #secondImg, #thirdImg, #fifthImg, #sixthImg{
         height: 12rem;
-        
+    }
+    #thirdImg img  {
+        height: 7.7rem;
+    }
+    #sixthImg img{
+        height:9.7rem;
     }
     
 }
