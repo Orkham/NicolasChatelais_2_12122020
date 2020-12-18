@@ -3,6 +3,9 @@ body {
   font-family: "Raleway", "Sans serif";
   margin: 0;
 }
+html{
+    width:100%
+}
 a {
     text-decoration: none;
     color: black;
@@ -20,7 +23,6 @@ header{
     display: flex;
     padding:  1rem;
     height: 2.8rem;
-    
     justify-content: flex-start;
 }
 .nav {
@@ -239,7 +241,7 @@ i[data-i=false]{
     min-height: 100%;
     
     min-width: 40%;
-    max-width: 33%;
+    /*max-width: 33%;*/
     margin: 0.3rem;
 }
 .imgRognee img{
@@ -338,7 +340,7 @@ footer a{
         display: flex;
     }
     .descriptionBox{
-        background-color: none;
+        background-color: transparent;
     }
     .searchInput{
         width:50%;
@@ -494,10 +496,10 @@ footer a{
         border-radius: 20px;
         background-color: white;
         box-shadow: 1px 1px 10px 2px #D9D9D9;
-        padding-bottom: 1rem;
+        padding-bottom: 0;
     }
     .descriptionBox{
-        background-color: none;
+        background-color: transparent;
         justify-content: space-between;
         
     }
@@ -543,13 +545,30 @@ footer a{
         position: relative;
     }
     
+    .hebergementsPresentation a {
+        
+        padding-bottom: 0;
+    }
+    .famous{
+        padding: 0.5rem 1rem;
+    }
+    .imgRognee{
+        min-width: 33%;
+    }
+    .imgRognee img{
+        width: 100%;
+    }
+    .famousPresentation figure {
+        min-height: 12rem;
+    }
     #thirdImg{
         position:absolute;
         top:55%;
-        left:25%
+        left:25%;
+        margin-top:25px;
     }
     #secondImg img {
-        height: 10rem;
+        height: 11rem;
     }
     #fifthImg img{
         height: 8rem;
@@ -566,10 +585,10 @@ footer a{
         width:98%;
     }
     #firstImg, #forthImg{
-        height: 26rem;
+        height: 28rem;
     }
     #firstImg img, #forthImg img{
-        height: 22rem;
+        height: 24rem;
     }
     .activitiesPresentation{
         max-height: 28rem;
@@ -579,10 +598,14 @@ footer a{
         height: 12rem;
     }
     #thirdImg img  {
-        height: 7.7rem;
+        height: 7rem;
+    }
+    #sixthImg{
+        margin-top:19px;
     }
     #sixthImg img{
         height:9.7rem;
+        
     }
     .footer div{
         margin-right:23%;
