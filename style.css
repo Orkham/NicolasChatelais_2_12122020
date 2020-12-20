@@ -3,9 +3,7 @@ body {
   font-family: "Raleway", "Sans serif";
   margin: 0;
 }
-html{
-    width:100%
-}
+
 a {
     text-decoration: none;
     color: black;
@@ -544,10 +542,15 @@ footer a{
     .activitiesPresentation{
         position: relative;
     }
-    
+    h2{
+        font-size: 200%;
+    }
     .hebergementsPresentation a {
         
         padding-bottom: 0;
+    }
+    article .famousDescription {
+        font-size: 130%;
     }
     .famous{
         padding: 0.5rem 1rem;
@@ -560,6 +563,18 @@ footer a{
     }
     .famousPresentation figure {
         min-height: 12rem;
+    }
+    .famousDescription{
+        justify-content: flex-start;
+        font-size: 150%;
+    }
+    .note{
+        margin-top:6rem;
+        transform: scale(1.2);
+        transform-origin: 0;
+    }
+    .results .moreInfo{
+        font-size: 140%;
     }
     #thirdImg{
         position:absolute;
@@ -583,6 +598,9 @@ footer a{
     }
     .activities{
         width:98%;
+    }
+    .activities .famousDescription {
+        font-size: 190%;
     }
     #firstImg, #forthImg{
         height: 28rem;
