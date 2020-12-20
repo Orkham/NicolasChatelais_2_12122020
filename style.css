@@ -80,6 +80,7 @@ h1{
 
 #placeholder::placeholder{ /* à revoir sur mozilla */
     color: black;
+    opacity: 1;
 }
 
 .loca{
@@ -532,7 +533,6 @@ footer a{
     .moreInfo{
         padding:1rem 0;
     }
-    
 }
 /******************** DESKTOP ********************/
 @media screen and (min-width: 1280px) {
@@ -623,7 +623,6 @@ footer a{
     }
     #sixthImg img{
         height:9.7rem;
-        
     }
     .footer div{
         margin-right:23%;
