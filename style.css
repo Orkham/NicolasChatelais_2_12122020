@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 body {
   font-family: "Raleway", "Sans serif";
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1920px;
 }
 
 a {
     text-decoration: none;
     color: black;
 }
+    
 
 .search{
     margin: 1rem;
@@ -19,7 +21,7 @@ header{
 
 .logo {
     display: flex;
-    padding:  1rem;
+    margin:  1rem;
     height: 2.8rem;
     justify-content: flex-start;
 }
@@ -63,7 +65,6 @@ h1{
     font-weight: 700;
 }
 
-
 .searchInput{
     display: flex;
     border: 1px #f2f2f2 solid;
@@ -80,7 +81,7 @@ h1{
 #placeholder, #rechercher{
     font-size:110%;
 }
-#placeholder::placeholder{ /* à revoir sur mozilla */
+#placeholder::placeholder{ 
     color: black;
     opacity: 1;
 }
@@ -177,13 +178,13 @@ button:hover{
     display: flex;
     font-size: 1.5rem;
 }
+
 .famous{
     background-color: #f2f2f2;
     width: 100%;
     padding-bottom:2rem;
     padding-top:0.5rem;
 }
-
 figure{
     min-height: 8.5rem;
     display: flex;
@@ -234,17 +235,14 @@ i[data-i=false]{
     color:#d9d9d9;
 }
 
+
 .results{
-    
     margin: 1rem;
 }
-
 .imgRognee{
     position: relative;
     min-height: 100%;
-    
     min-width: 40%;
-    /*max-width: 33%;*/
     margin: 0.3rem;
 }
 .imgRognee img{
@@ -253,7 +251,6 @@ i[data-i=false]{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
 }
 article{
     border-radius: 1rem ;
@@ -267,10 +264,8 @@ article img{
     width: 100%;
     max-height: 100%;
     border-radius: 1rem 1rem 0 0;
-    /**********/
     min-height: 57%;
 }
-
 article .famousDescription{
     margin-top:0;
     margin-bottom:0;
@@ -326,7 +321,6 @@ footer div{
     display: flex;
     flex-direction: column;
     margin: 0.8rem;
-    
 }
 footer h3{
     margin-top: 2rem;
@@ -348,6 +342,7 @@ footer a{
     }
     .searchInput{
         width:50%;
+        margin-bottom: 1rem;
     }
     .searchInput button i{
         display: none;
