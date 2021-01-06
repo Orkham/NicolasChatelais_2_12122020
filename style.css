@@ -17,6 +17,7 @@ a {
 header{
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .logo {
@@ -547,7 +548,7 @@ footer a{
         width:100%;
     }
     .logo{
-        left:2rem;
+        left:-1rem;
     }
     #placeholder, #rechercher{
         font-size:110%;
@@ -622,7 +623,7 @@ footer a{
         margin-top: 1.5rem;
     }
     .famousPresentation figure {
-        height: 11rem;
+        height: 13rem;
     }
     .famousDescription{
         justify-content: space-between;
